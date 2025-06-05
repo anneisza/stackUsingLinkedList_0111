@@ -4,7 +4,7 @@ using namespace std;
 class Node//Membuat class node
 {
 public:
-    int data;
+    int data; //mendeklarasikan integer data
     Node *next;
     Node()
     {
