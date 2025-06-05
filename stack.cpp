@@ -5,7 +5,7 @@ class Node//Membuat class node
 {
 public:
     int data; //mendeklarasikan integer data
-    Node *next;
+    Node *next; //Node pointer next
     Node()
     {
         next = NULL;
