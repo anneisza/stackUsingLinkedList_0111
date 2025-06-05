@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-class Node//Membuat class node
+class Node // Membuat class node
 {
 public:
-    int data; //mendeklarasikan integer data
-    Node *next; //Node pointer next
+    int data;   // mendeklarasikan integer data
+    Node *next; // Node pointer next
     Node()
     {
-        next = NULL;//Node berikutnya kosong(NULL)
+        next = NULL; // Node berikutnya(NEXT) kosong(NULL)
     }
 };
 
@@ -44,7 +44,7 @@ public:
     // pop operation: Remove the topmost element from the stack
     void pop()
     {
-        Node *temp = top; //create a temporary pointer to the current top node
+        Node *temp = top; // create a temporary pointer to the current top node
         if (isEmpty())
         {
             cout << "Stack is empty." << endl;
@@ -52,7 +52,7 @@ public:
         }
         cout << "Popped value: " << temp->data << endl;
         top = temp->next; // Update the top pointer to the next node
-        temp = nullptr; //Free the memory of the popped node
+        temp = nullptr;   // Free the memory of the popped node
     }
 
     // Peek/Top operation: Retrieve the value of the topmost element without removing it
