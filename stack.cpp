@@ -25,7 +25,7 @@ public:
     }
 
     // Push operation: Insert an element onto the top of the stack
-    int push(int value)
+    int push(int value)//Untuk memasukkan data
     {
         Node *newNode = new Node(); // 1. Allocate memory for the new code
         newNode->data = value;      // 2. Assign value
@@ -42,7 +42,7 @@ public:
     }
 
     // pop operation: Remove the topmost element from the stack
-    void pop()
+    void pop()//Untuk menghapus data
     {
         Node *temp = top; // create a temporary pointer to the current top node
         if (isEmpty())
@@ -56,7 +56,7 @@ public:
     }
 
     // Peek/Top operation: Retrieve the value of the topmost element without removing it
-    void peek()
+    void peek()//Untuk melihat data
     {
         if (isEmpty())
         {
