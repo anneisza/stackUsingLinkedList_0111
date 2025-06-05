@@ -30,4 +30,28 @@ class Stack{
         cout << "Push value:" << value <<endl;
         return value;
     }
+
+    //IsEmpty operation: Check if the stack is empty
+    bool isEmpty(){
+        return top == NULL; //return true if the top pointer is NULL, indicating an empty stack
+    }
+
+    //pop operation: Remove the topmost element from the stack
+    void pop(){
+        if (isEmpty())
+        {
+            cout<< "Stack is empty." <<endl;
+            return; //If the stack is empty, print a message and return
+        } 
+        cout << "Popped value: " << top->data<<endl;
+        top = top->next; //Update the top pointer to the next node
+    }
+
+    //Peek/Top operation: Retrieve the value of the topmost element without removing it
+    void peek(){
+        
+    }
 };
+
+
+
