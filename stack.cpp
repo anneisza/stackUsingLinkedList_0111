@@ -50,8 +50,9 @@ public:
             cout << "Stack is empty." << endl;
             return; // If the stack is empty, print a message and return
         }
-        cout << "Popped value: " << top->data << endl;
-        top = top->next; // Update the top pointer to the next node
+        cout << "Popped value: " << temp->data << endl;
+        top = temp->next; // Update the top pointer to the next node
+        temp = nullptr; //Free the memory of the popped node
     }
 
     // Peek/Top operation: Retrieve the value of the topmost element without removing it
