@@ -8,7 +8,7 @@ public:
     Node *next; //Node pointer next
     Node()
     {
-        next = NULL;
+        next = NULL;//Node berikutnya kosong(NULL)
     }
 };
 
